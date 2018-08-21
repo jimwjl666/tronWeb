@@ -4,8 +4,8 @@
 A jssdk that encapsulates the TRON HTTP request
 
 # Install
-* npm: npm install tronWeb
-* bower: bower install tronWeb
+* npm: npm install tronweb
+* bower: bower install tronweb
 
 
 # Example Usage
