@@ -28,10 +28,10 @@ class TronWeb {
         return hexString2Utf8(sHex)
     }
     setFullNodeServer(value){
-        this.tronInfuraUrl = value;
+        this.apiUrl = value;
     }
     setEventServer(value = 'http://52.44.75.99:18889'){
-        this.apiUrl = value;
+        this.tronInfuraUrl = value;
     }
     /**
      * Obtain account balance

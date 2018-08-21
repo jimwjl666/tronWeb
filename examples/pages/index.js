@@ -1,5 +1,5 @@
 import React,{ReactDOM} from 'react'
-import TronWeb from '../../src/index.js'
+import TronWeb from 'tronweb'
 import stringify from 'json-stringify-pretty-compact'
 import {utils} from 'ethers'
 let tronWeb = new TronWeb('http://52.44.75.99:8090');
