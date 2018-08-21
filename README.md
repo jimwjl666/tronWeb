@@ -10,27 +10,22 @@ A jssdk that encapsulates the TRON HTTP request
 
 # Example Usage
 ```
-const TronWeb = require('tronWeb')
-const solidityNode = TronWeb.getSolidityNode({apiUrl:''})  
-const fullNode = TronWeb.getFullNode({apiUrl:''})  
-const address = 'TYrWfWFGwrWLwNvE4T12aQGeur9UdjQJom'
+let tronWeb = new TronWeb('http://52.44.75.99:8090');
+tronWeb.setEventServer('http://52.44.75.99:18889');
+tronWeb.defaultAccount = 'TPL66VK2gCXNCD7EJg9pgJRfqcRazjhUZY';
+tronWeb.defaultPk='da146374a75310b9666e834ee4ad0866d6f4035967bfc76217c5a495fff9f0d0'; 
 
-// ES7
- async getAccountInfo(){
-    const data = await solidityNode.getAccountInfo(address);
-    console.log(data);
- }
-// or promise
+async getBalance(){
+        const res = await tronWeb.getBalance(this.account.value);
+        this.setState({
+            data:res
+        })
+    }  
 
-getAccountInfo(){
- solidityNode.getAccountInfo(address).then(res=>{
-   console.log(res);
- })
-}    
 ```
 
 # GitHub
-
+https://github.com/gitwujiaolong/tronWeb.git
 # docs
 [document](http://doc.tron.network/)
 [官方文档](http://doc.tron.network/)
