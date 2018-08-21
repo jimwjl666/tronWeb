@@ -1,14 +1,16 @@
 # TronWeb
 
 
-A jssdk that encapsulates the TRON HTTP request
+* A jssdk that encapsulates the TRON HTTP request
+* It is best to use in Vue or react projects
+* If you want to use it in HTML, you need to execute NPM run build and then UMD modules and ES modules will be generated 
 
 # Install
 * npm: npm install tronweb
 * bower: bower install tronweb
 
 
-# Example Usage
+# Example Usage in React or vue
 ```
 let tronWeb = new TronWeb('http://52.44.75.99:8090');
 tronWeb.setEventServer('http://52.44.75.99:18889');
