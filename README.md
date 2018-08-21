@@ -1,3 +1,4 @@
+# Project moved to https://github.com/tronprotocol/tron-web
 # TronWeb
 
 
@@ -27,7 +28,7 @@ async getBalance(){
 ```
 
 # GitHub
-https://github.com/gitwujiaolong/tronWeb.git
+https://github.com/tronprotocol/tron-web
 # docs
 [document](http://doc.tron.network/)
 [官方文档](http://doc.tron.network/)
